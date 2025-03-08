@@ -1,0 +1,57 @@
+VCD info: dumpfile fullchip_tb.vcd opened for output.
+##### Q data txt reading #####
+Q0 = [         -5          7         -5         -7         -1          6          1          2] Hex: fb07fbf9ff060102
+Q1 = [         -4          7         -2         -5         -3          4          1         -3] Hex: fc07fefbfd0401fd
+Q2 = [         -4         -1         -4         -4          0          5          2          0] Hex: fcfffcfc00050200
+Q3 = [         -3          3          6         -4          6          2          1          6] Hex: fd0306fc06020106
+Q4 = [         -8          5         -2          6          2          1         -3          4] Hex: f805fe060201fd04
+Q5 = [         -2         -1         -2         -6         -1          4          0          2] Hex: fefffefaff040002
+Q6 = [          5         -7         -1          3          2          1         -7          6] Hex: 05f9ff030201f906
+Q7 = [          5         -8         -3          6          0         -2          6         -1] Hex: 05f8fd0600fe06ff
+##### K data txt reading #####
+K0 = [         -6          3         -2         -1         -5          1          0          7] Hex: fa03fefffb010007
+K1 = [          0         -5         -8          0          6          0         -5         -7] Hex: 00fbf8000600fbf9
+K2 = [          4         -7         -6          3          7          7          6          6] Hex: 04f9fa0307070606
+K3 = [         -3          0          0         -7          6          3          4          7] Hex: fd0000f906030407
+K4 = [          6         -3          4         -7         -4         -3         -2         -5] Hex: 06fd04f9fcfdfefb
+K5 = [          0         -7          3          3         -2          6          4         -1] Hex: 00f90303fe0604ff
+K6 = [          7         -5          2          1          3          6          1         -5] Hex: 07fb0201030601fb
+K7 = [          3         -1          6          3         -6         -2          1         -4] Hex: 03ff0603fafe01fc
+##### Estimated multiplication result #####
+prd @cycle 0: Q0*K[n] = [         93         -20          -7          94         -48         -45         -63         -86 ]
+prd @cycle 1: Q1*K[n] = [         52         -21         -73          24          -5         -33         -41         -23 ]
+prd @cycle 2: Q2*K[n] = [         38          27          50          63         -28          21          -3         -55 ]
+prd @cycle 3: Q3*K[n] = [         33         -74          17         125         -37         -17         -27         -51 ]
+prd @cycle 4: Q4*K[n] = [         80         -10         -10          13        -138         -37         -90         -56 ]
+prd @cycle 5: Q5*K[n] = [         42           1          26          68           7           7          -8         -45 ]
+prd @cycle 6: Q6*K[n] = [        -19          48          99          -7          -1          23          46         -20 ]
+prd @cycle 7: Q7*K[n] = [        -63          41         128         -46          -1          78          74          37 ]
+##### Qmem writing  #####
+Clock Cycle = 12: Q0 = [         -5          7         -5         -7         -1          6          1          2]
+Clock Cycle = 13: Q1 = [         -4          7         -2         -5         -3          4          1         -3]
+Clock Cycle = 14: Q2 = [         -4         -1         -4         -4          0          5          2          0]
+Clock Cycle = 15: Q3 = [         -3          3          6         -4          6          2          1          6]
+Clock Cycle = 16: Q4 = [         -8          5         -2          6          2          1         -3          4]
+Clock Cycle = 17: Q5 = [         -2         -1         -2         -6         -1          4          0          2]
+Clock Cycle = 18: Q6 = [          5         -7         -1          3          2          1         -7          6]
+Clock Cycle = 19: Q7 = [          5         -8         -3          6          0         -2          6         -1]
+##### Kmem writing #####
+Clock Cycle = 21: K0 = [         -6          3         -2         -1         -5          1          0          7]
+Clock Cycle = 22: K1 = [          0         -5         -8          0          6          0         -5         -7]
+Clock Cycle = 23: K2 = [          4         -7         -6          3          7          7          6          6]
+Clock Cycle = 24: K3 = [         -3          0          0         -7          6          3          4          7]
+Clock Cycle = 25: K4 = [          6         -3          4         -7         -4         -3         -2         -5]
+Clock Cycle = 26: K5 = [          0         -7          3          3         -2          6          4         -1]
+Clock Cycle = 27: K6 = [          7         -5          2          1          3          6          1         -5]
+Clock Cycle = 28: K7 = [          3         -1          6          3         -6         -2          1         -4]
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+Memory write to PSUM mem add 0 Hex: 0005dfffecffff90005efffd0fffd3fffc1fffaa -> Dec: [     93     -20      -7      94     -48     -45     -63     -86 ]
+Memory write to PSUM mem add 1 Hex: 00034fffebfffb700018ffffbfffdffffd7fffe9 -> Dec: [     52     -21     -73      24      -5     -33     -41     -23 ]
+Memory write to PSUM mem add 2 Hex: 000260001b000320003ffffe400015ffffdfffc9 -> Dec: [     38      27      50      63     -28      21      -3     -55 ]
+Memory write to PSUM mem add 3 Hex: 00021fffb6000110007dfffdbfffeffffe5fffcd -> Dec: [     33     -74      17     125     -37     -17     -27     -51 ]
+Memory write to PSUM mem add 4 Hex: 00050ffff6ffff60000dfff76fffdbfffa6fffc8 -> Dec: [     80     -10     -10      13    -138     -37     -90     -56 ]
+Memory write to PSUM mem add 5 Hex: 0002a000010001a000440000700007ffff8fffd3 -> Dec: [     42       1      26      68       7       7      -8     -45 ]
+Memory write to PSUM mem add 6 Hex: fffed0003000063ffff9fffff000170002efffec -> Dec: [    -19      48      99      -7      -1      23      46     -20 ]
+Memory write to PSUM mem add 7 Hex: fffc10002900080fffd2fffff0004e0004a00025 -> Dec: [    -63      41     128     -46      -1      78      74      37 ]
